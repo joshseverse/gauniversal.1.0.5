@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<extension version="3.1" type="plugin" group="system" method="upgrade">
+	<name>GA Universal</name>
+	<author>James Murphy/Hugh Gideon-Murphy - Tools for Joomla Shop</author>
+	<creationDate>March 2014</creationDate>
+	<copyright>Copyright (C) 2014. All rights reserved.</copyright>
+	<license>http://www.gnu.org/licenses/gpl-2.0.html GNU/GPL</license>
+	<authorEmail>info@toolsforjoomla.com</authorEmail>
+	<authorUrl>www.toolsforjoomla.com</authorUrl>
+	<version>1.0.5</version>
+	<description>PLG_GA_UNIVERSAL_XML_DESCRIPTION</description>
+	<files>
+		<filename plugin="gauniversal">gauniversal.php</filename>
+		<filename>index.html</filename>
+	</files>
+	<languages>
+		<language tag="en-GB">en-GB.plg_system_gauniversal.ini</language>
+		<language tag="en-GB">en-GB.plg_system_gauniversal.sys.ini</language>
+	</languages>
+	<config>
+		<fields name="params">
+
+			<fieldset name="basic">
+				<field name="track_id" type="text"
+					description="PLG_GA_UNIVERSAL_FIELD_TRACKING_DESC"
+					label="PLG_GA_UNIVERSAL_FIELD_TRACKING_LABEL">
+				</field>
+				<field name="domain" type="text"
+					description="PLG_GA_UNIVERSAL_FIELD_DOMAIN_DESC"
+					label="PLG_GA_UNIVERSAL_FIELD_DOMAIN_LABEL">
+				</field>
+				<field name="demographics" type="radio"
+					description="PLG_GA_UNIVERSAL_FIELD_DEMOGRAPHICS_DESC"
+					label="PLG_GA_UNIVERSAL_FIELD_DEMOGRAPHICS_LABEL">
+					<option value="on">Track</option>
+					<option value="off">Do not track</option>
+				</field>
+			</fieldset>
+
+		</fields>
+	</config>
+	<updateservers>
+    <server type="extension" priority="1"
+        name="GA Universal Updates"><![CDATA[http://www.toolsforjoomla.com/index.php?option=com_ars&view=update&task=stream&format=xml&id=1]]></server>
+</updateservers>
+</extension>
